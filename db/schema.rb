@@ -18,15 +18,15 @@ ActiveRecord::Schema.define(version: 3) do
     t.integer "inventory"
     t.integer "num_employees"
     t.boolean "still_open"
-    t.datetime "opening_time"
-    t.datetime "closing_time"
+    t.string "opening_time"
+    t.string "closing_time"
   end
 
   create_table "costumes", force: :cascade do |t|
     t.string "name"
     t.integer "price"
     t.string "size"
-    t.text "image_url"
+    t.string "image_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
